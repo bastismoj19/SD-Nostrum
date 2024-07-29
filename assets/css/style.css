@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #134288;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    font-size: 1rem;
+    padding: 8px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+button {
+    font-size: 125%;
+    padding: 10px 20px;
+    border: none;
+    background-color: #04b34d;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1add6b;
+}

@@ -1,0 +1,193 @@
+/* header */
+header {
+    display: flex;
+    background-color: #134288;
+    align-items: center;
+    justify-content: center;
+    gap: 7.5rem;
+    padding: 17px;
+}
+
+.links {
+    display: flex;
+    gap: 4rem;
+}
+
+.search_input {
+    border: 1px solid white;
+    background-color: #134288;
+    color: white;
+    padding-left: 2.5rem;
+    width: 13rem;
+}
+
+.search_input::placeholder {
+    color: white;
+}
+
+.search_icon {
+    height: 1.3rem;
+    width: 1.3rem;
+    position: absolute;
+    margin-left: -10.5rem;
+}
+
+.search_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* body */
+.body {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    height: 25rem;
+    background: url('../img/skyline-buildings-new-york-skyscrapers.jpg') no-repeat center center;
+    background-size: cover;
+    filter: brightness(102%);
+}
+
+.body_container {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.device_black {
+    height: 15rem;
+}
+
+.body_paragraph {
+    font-size: 2.3rem;
+    color: #134288;
+}
+
+.body_button {
+    margin-top: 2rem;
+    height: 3rem;
+    width: 12rem;
+}
+
+.body_content {
+    width: 35rem;
+}
+
+.body1 {
+    display: flex;
+    background-color: rgb(202, 202, 202);
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+
+.body1_content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 17rem;
+}
+
+.body1_img {
+    height: 4rem;
+}
+
+.body1_paragraph {
+    color: #134288;
+}
+
+.body2 {
+    height: 40rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iphone7 {
+    height: 12rem;
+}
+
+.body2_container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 60rem;
+}
+
+.body2_paragraph {
+    font-size: 1.5rem;
+    color: #134288;
+}
+
+.body2_button {
+    margin-top: 1rem;
+    height: 3rem;
+    width: 12rem;
+}
+
+.body2_container3 {
+    background-color: aliceblue;
+    height: 20rem;
+    width: 20rem;
+}
+
+.tab-container {
+    width: 400px;
+    background-color: #1a3d5c;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 3.5rem;
+    text-align: center;
+}
+.tab-header {
+    display: flex;
+}
+.tab-link {
+    background-color: orange;
+    font-size: 1.3rem;
+}
+.tab-header div {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+.tab-header .active {
+    background-color: #1a3d5c;
+}
+.tab-content {
+    padding: 20px;
+    background-color: #1a3d5c;
+}
+.tab-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #e9e9e9;
+}
+.tab-content button {
+    width: 40%;
+    padding: 10px;
+    border: none;
+    margin-left: 11rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    background-color: #18904a;
+    color: white;
+    cursor: pointer;
+}
+
+.tab-content button:hover {
+    background-color: #0acc5b;
+}
+
+.body2_paragraph1 {
+    background-color: rgb(211, 211, 211);
+    padding: 3px;
+    margin-left: -1.5rem;
+    text-align: center;
+}
