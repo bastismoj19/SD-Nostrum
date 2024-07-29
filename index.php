@@ -1,108 +1,111 @@
-<!DOCTYPE html>
+<!---Walter James Bastismo GROUP 3--->
+
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nostrum</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="logo"><img src="assets/images/nostrum.png"></div>
-        <nav class="nav">
-            <a href="#">Lorem</a>
-            <a href="#">Ipsum</a>
-            <a href="#">Dolor</a>
-        </nav>
-        <div class="search-bar">
-                <form action="/" method="GET" class="form">
-                  <input type="search" placeholder="Aperiam" class="search-field" />
-                  <button type="submit" class="search-button">
-                    <img src="assets/images/search.png">
-                  </button>
-                </form>
-        </div>
-    </header>
-
-    <!-- Main Banner Section -->
-    <section class="banner">
-        <img src="assets/images/background.png" alt="">
-        <div>
-            <h1>Sed ut perspiciatis unde omnis <br> iste natus error sit</h1>
-            <p>Nemo enim ipsam voluptatem <br> quia voluptas sit</p>
-            <button class="cta-button">Voluptatibus</button>
-        </div>
-        <div>
-            <img src="assets/images/device_black.png" alt="Phone Image" class="banner-image">
-        </div>
-    </section>
-
-    <!-- Feature Section -->
-    <section class="features">
-        <div id="wifi" class="feature">
-            <img src="assets/images/wifi.png" alt="wifiIcon">
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</p>
-        </div>
-        <div id="share" class="feature">
-            <img src="assets/images/connect.png" alt="shareIcon">
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</p>
-        </div>
-        <div class="feature">
-            <img src="assets/images/message.png" alt="lock">
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</p>
-        </div>
-    </section>
-
-    <!-- Product Section -->
-    <section class="product">
-        <div>
-            <img src="assets/images/iphone7.png" alt="Product Image">
-        </div>
-        <div id="product-details">
-            <h2>At vero eos et accusamus et iusto odio</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio<br> nihil impedit quo minus id quod maxime placeat facere.</p>
-            <button class="cta-button">Vel illum qui</button>
-        </div>
-    </section>
-
-    <section class="bottomPage">
-        <h2>Ut enim ad minima veniam</h2>
-        <div class="content-wrapper">
-            <div class="left-side">
-                <img src="assets/images/phone.png" alt="black-phone">
-            
-            
-                <div class="additional-info">
-                    
-                    <div class="info">
-                        <img src="assets/images/wifi.png" alt="wifi-icon">
-                        <p>Nam libero tempore, cum <br>soluta nobis est eligendi</p>
-                    </div>
-                
-                    <div class="info">
-                        <img src="assets/images/connect.png" alt="connect-icon">
-                        <p>Nam libero tempore, cum <br> soluta nobis est eligendi</p>
-                    </div>
-                    <div class="info">
-                        <img src="assets/images/message.png" alt="message-icon">
-                        <p>Nam libero tempore, cum <br>soluta nobis est eligendi</p>
-                    </div>
-                </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nostrum</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/stylesheet.css">
+        <link rel="icon" href="assets/img/device_black.png">
+    </head>
+    <body>
+        <header>
+            <img src="assets/img/nostrum.png" alt="">
+            <div>
+                <ul class="links">
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Dolor</a></li>
+                </ul>
             </div>
-            <div class="right-side">
-                <div class="form-section">
-                    <div class="form-header">Iste natus</div>
-                    <div class="form-content">
-                        <label for="adipiscing">Adipiscing</label>
-                        <input type="text" id="adipiscing" name="adipiscing">
-                        <label for="commodi">Ex ea commodi</label>
-                        <input type="text" id="commodi" name="commodi">
-                        <button type="submit" class="cta-button">Vel illum qui</button>
-                    </div>
+            <div class="search_container">
+                <img class="search_icon" src="assets/img/search_icon.png" alt="">
+                <input class="search_input" type="text" placeholder="Aperiam">
+            </div>
+        </header>
+
+        <div class="body">
+            <div class="body_container">
+                <div class="body_content">
+                    <h1>Sed ut perspiciatis unde omnis iste natus error sit</h1>
+                    <p class="body_paragraph">Nemo enim ipsam voluptatem <br>quia voluptas sit</p>
+                    <button class="body_button" onclick="CpList()">Voluptatibus</button>
+                </div>
+                <div>
+                    <img class="device_black" src="assets/img/device_black.png" alt="">
                 </div>
             </div>
         </div>
-    </section>
-</body>
+
+        <div class="body1">
+            <div class="body1_content">
+                <img class="body1_img" src="assets/img/wifi.png" alt="">
+                <p class="body1_paragraph">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</p>
+            </div>
+            <div class="body1_content">
+                <img class="body1_img" src="assets/img/connect.png" alt="">
+                <p class="body1_paragraph">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</p>
+            </div>
+            <div class="body1_content">
+                <img class="body1_img" src="assets/img/message.png" alt="">
+                <p class="body1_paragraph">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit</p>
+            </div>
+        </div>
+
+        <div class="body2">
+            <div>
+                <div class="body2_container">
+                    <img class="iphone7" src="assets/img/iphone7.png" alt="">
+                    <div>
+                        <h1>At vero eos et accusamus et iusto odio</h1>
+                        <p class="body2_paragraph">Nam libero tempore, cum soluta nobis est eligendi optio <br>nihil impedit quo minus id quod maxime placeat facere.</p>
+                        <button class="body2_button" onclick="IphoneList()">Vel illum qui</button>
+                    </div>
+                </div>
+                <div style="display: flex; margin-top: 2rem; gap: 2rem;">
+                    <div class="body2_container2">
+                        <h1>Ut enim ad minima veniam</h1>
+                        <div style="display: flex; gap: 2rem; margin-top: 1rem;">
+                            <div>
+                                <img style="height: 15rem;" src="assets/img/phone.png" alt="">
+                            </div>
+                            <div>
+                                <div style="width: 18rem; align-items: center; margin-top: 10px;" class="body1_content">
+                                    <img style="z-index: 999;" src="assets/img/wifi.png" alt="">
+                                    <p class="body2_paragraph1">Nam libero tempore, cum soluta nobis est eligendi</p>
+                                </div>
+                                <div style="width: 18rem; align-items: center; margin-top: 10px;" class="body1_content">
+                                    <img style="z-index: 999;" src="assets/img/connect.png" alt="">
+                                    <p class="body2_paragraph1">Nam libero tempore, cum soluta nobis est eligendi</p>
+                                </div>
+                                <div style="width: 18rem; align-items: center; margin-top: 10px;" class="body1_content">
+                                    <img style="z-index: 999;" src="assets/img/message.png" alt="">
+                                    <p class="body2_paragraph1">Nam libero tempore, cum soluta nobis est eligendi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-container">
+                        <div class="tab-header">
+                            <div class="tab-link active" onclick="openTab(event, 'tab1')">Iste natus</div>
+                            <div class="tab-link" onclick="openTab(event, 'tab2')">Qui ratione</div>
+                        </div>
+                        <div class="tab-content" id="tab1">
+                            <input type="text" placeholder="Adipiscing">
+                            <input type="text" placeholder="Ex ea commodi">
+                            <button>Vel illum qui</button>
+                        </div>
+                        <div class="tab-content" id="tab2" style="display: none;">
+                            <input type="text" placeholder="FullName">
+                            <input type="text" placeholder="CellPhone ">
+                            <input type="text" placeholder="Ex ea commodi">
+                            <button>Vel illum qui</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="assets/js/style.js"></script>
 </html>
