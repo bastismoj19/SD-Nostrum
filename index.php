@@ -14,7 +14,7 @@
             <img src="assets/img/nostrum.png" alt="">
             <div>
                 <ul class="links">
-                    <li><a href="">Lorem</a></li>
+                    <li><a href="https://bastismoj19.github.io/Portfolio/basti/" target="_blank">Lorem</a></li>
                     <li><a href="">Ipsum</a></li>
                     <li><a href="">Dolor</a></li>
                 </ul>
@@ -88,20 +88,22 @@
                     </div>
                     <div class="tab-container">
                         <div class="tab-header">
-                            <div class="tab-link active" onclick="openTab(event, 'tab1')">Iste natus</div>
-                            <div class="tab-link" onclick="openTab(event, 'tab2')">Qui ratione</div>
+                            <div class="tab-link active" onclick="openTab(event, 'tab1')">Login</div>
+                            <div class="tab-link" onclick="openTab(event, 'tab2')">Register</div>
                         </div>
-                        <div class="tab-content" id="tab1">
-                            <input type="text" placeholder="Adipiscing">
-                            <input type="text" placeholder="Ex ea commodi">
-                            <button>Vel illum qui</button>
-                        </div>
-                        <div class="tab-content" id="tab2" style="display: none;">
-                            <input type="text" placeholder="FullName">
-                            <input type="text" placeholder="CellPhone ">
-                            <input type="text" placeholder="Ex ea commodi">
-                            <button>Vel illum qui</button>
-                        </div>
+                        <form action="assets/php/database.php" method="post">
+                            <div class="tab-content" id="tab1">
+                                <input type="email" name="gmail" class="gmail" placeholder="Gmail" required>
+                                <input type="password" name="password" class="password" placeholder="Password" required>
+                                <button type="submit" name="action" value="login">Login</button>
+                            </div>
+                            <div class="tab-content" id="tab2" style="display: none;">
+                                <input type="text" name="fullname" class="fullname" placeholder="Fullname" required>
+                                <input type="password" name="password" class="password" placeholder="Password" required>
+                                <input type="email" name="gmail" class="gmail" placeholder="Gmail" required>
+                                <button type="submit" name="action" value="register">Register</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
