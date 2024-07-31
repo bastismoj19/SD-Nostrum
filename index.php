@@ -91,19 +91,21 @@
                             <div class="tab-link active" onclick="openTab(event, 'tab1')">Login</div>
                             <div class="tab-link" onclick="openTab(event, 'tab2')">Register</div>
                         </div>
-                        <form action="assets/php/database.php" method="post">
-                            <div class="tab-content" id="tab1">
+                        <div class="tab-content" id="tab1">
+                            <form action="assets/php/database.php" method="post">
                                 <input type="email" name="gmail" class="gmail" placeholder="Gmail" required>
                                 <input type="password" name="password" class="password" placeholder="Password" required>
                                 <button type="submit" name="action" value="login">Login</button>
-                            </div>
-                            <div class="tab-content" id="tab2" style="display: none;">
+                            </form>
+                        </div>
+                        <div class="tab-content" id="tab2" style="display: none;">
+                            <form action="assets/php/database.php" method="post">
                                 <input type="text" name="fullname" class="fullname" placeholder="Fullname" required>
                                 <input type="password" name="password" class="password" placeholder="Password" required>
                                 <input type="email" name="gmail" class="gmail" placeholder="Gmail" required>
                                 <button type="submit" name="action" value="register">Register</button>
-                            </div>
-                        </form>
+                            </form>
+                        </div>                        
                     </div>
                 </div>
             </div>
