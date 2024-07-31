@@ -1,35 +1,52 @@
 <?php
+session_start();
 
 $mysqli = new mysqli("localhost", "root", "", "nostrum");
 
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
-} else {
-    echo "connected successfully";
 }
 
 $fullname = $_POST['fullname'];
-$password = $_POST['password'];
 $gmail = $_POST['gmail'];
+$password = $_POST['password'];
 
-$query = "INSERT INTO `users`(`fullname`,`password`, `gmail`) VALUES ('$emp_name','$password','$gmail')";
-$result = $mysqli->query($query);
+$checkQuery = "SELECT * FROM `users` WHERE `gmail` = '$gmail'";
+$checkResult = $mysqli->query($checkQuery);
 
-if ($result->num_rows == 1) {
-    $_SESSION['fullname'] = $fullname;
-
-    //get the data from db
-    while ($obj = $result->fetch_object()) {
-        $_SESSION['fullname'] = $obj->fullname;
-    }
-
-    header("Location: page1.php");
+if ($checkResult->num_rows > 0) {
+    echo "<script>
+            alert('Email already exists');
+            window.location.href = '../../index.php';
+          </script>";
 } else {
-    
-  echo "<script>alert('Invalid username or password')</script>";
+    echo "<script>
+            alert('Registered Successfully!');
+            window.location.href = '../../index.php';
+          </script>";
+          
+    $query = "INSERT INTO `users`(`fullname`,`gmail`, `password`) VALUES ('$fullname','$gmail','$password')";
+    $result = $mysqli->query($query);
 
-  header("Location: index.php");
-}   
+    
+
+    if ($result) {
+        $_SESSION['fullname'] = $fullname;
+
+        $userQuery = "SELECT * FROM `users` WHERE `gmail` = '$gmail'";
+        $userResult = $mysqli->query($userQuery);
+        while ($obj = $userResult->fetch_object()) {
+            $_SESSION['fullname'] = $obj->fullname;
+        }
+
+        header("Location: ../../index.php");
+    } else {
+        echo "<script>
+            alert('Invalid username or password');
+            window.location.href = '../../index.php';
+          </script>";
+    }
+}
+
 $mysqli->close();
 ?>
-
