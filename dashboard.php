@@ -14,21 +14,25 @@
             <img src="assets/img/nostrum.png" alt="">
             <div>
                 <ul class="links">
-                    <li><a href="">Lorem</a></li>
-                    <li><a href="">Ipsum</a></li>
-                    <li><a href="">Dolor</a></li>
+                    <li><a href="https://bastismoj19.github.io/Portfolio/basti/" target="_blank">Lorem</a></li>
+                    <li><a href="https://bastismoj19.github.io/Portfolio/basti/" target="_blank">Ipsum</a></li>
+                    <li><a href="https://bastismoj19.github.io/Portfolio/basti/" target="_blank">Dolor</a></li>
                 </ul>
             </div>
             <div class="search_container">
                 <img class="search_icon" src="assets/img/search_icon.png" alt="">
                 <input class="search_input" type="text" placeholder="Aperiam">
             </div>
+            <div>
+                
+            <a href="index.php" style="margin-left: 1rem;">Logout</a>
+            </div>
         </header>
 
         <div class="body">
             <div class="body_container">
                 <div class="body_content">
-                    <h1>Sed ut perspiciatis unde omnis iste natus error sit</h1>
+                    <h1>Welcome User!</h1>
                     <p class="body_paragraph">Nemo enim ipsam voluptatem <br>quia voluptas sit</p>
                     <button class="body_button" onclick="CpList()">Voluptatibus</button>
                 </div>
@@ -63,6 +67,7 @@
                         <button class="body2_button" onclick="IphoneList()">Vel illum qui</button>
                     </div>
                 </div>
+                <!---
                 <div style="display: flex; margin-top: 2rem; gap: 2rem;">
                     <div class="body2_container2">
                         <h1>Ut enim ad minima veniam</h1>
@@ -110,6 +115,6 @@
                 </div>
             </div>
         </div>
-    </body>
+    </body> --->
     <script src="assets/js/style.js"></script>
 </html>
