@@ -1,4 +1,34 @@
 <!---Walter James Bastismo GROUP 3--->
+<?php
+    // Creates database automatically 
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "nostrum";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Read SQL file
+    $sql = file_get_contents('assets/database/nostrum.sql');
+
+    // Execute SQL script
+    if ($conn->multi_query($sql)) {
+        do {
+            // Store first result set
+            if ($result = $conn->store_result()) {
+                $result->free();
+            }
+        } while ($conn->more_results() && $conn->next_result());
+    }
+
+    $conn->close();
+?>
 
 <html lang="en">
     <head>
